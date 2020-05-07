@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <meta
+      name="viweport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimum-scale=1.0"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+        background-color: #c5d5ff;
+      }
+
+      section {
+        padding: 0.4cm;
+        border: 0cm;
+        margin: 0.3cm 0.9cm 0.3cm 0.9cm;
+        background-color: rgb(255, 255, 255);
+      }
+      div {
+        padding: 0 0 0 0;
+        background-color: rgb(255, 255, 255);
+      }
+
+      /* Style the tab */
+      .tab {
+        overflow: hidden;
+        border: 1px solid #ccc;
+        background-color: #f1f1f1;
+      }
+
+      /* Style the buttons that are used to open the tab content */
+      .tab button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+      }
+
+      /* Change background color of buttons on hover */
+      .tab button:hover {
+        background-color: rgb(198, 216, 255);
+      }
+
+      /* Create an active/current tablink class */
+      .tab button.active {
+        background-color: rgb(177, 208, 255);
+      }
+
+      /* Style the tab content */
+      .tabcontent {
+        display: none;
+        padding: 6px 12px;
+        border: 1px solid #ccc;
+        border-top: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header></header>
+
+    <main>
+      <section>
+        <ul
+          class="nav nav-tabs nav-justified md-tabs indigo"
+          id="myTabJust"
+          role="tablist"
+        >
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              id="patiometalico-tab-just"
+              data-toggle="tab"
+              href="#patiometalico-just"
+              role="tab"
+              aria-controls="patiometalico-just"
+              aria-selected="true"
+              >Patio Metálico</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              id="he-tab-just"
+              data-toggle="tab"
+              href="#he-just"
+              role="tab"
+              aria-controls="he-just"
+              aria-selected="false"
+              >HE</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              id="hc-tab-just"
+              data-toggle="tab"
+              href="#hc-just"
+              role="tab"
+              aria-controls="hc-just"
+              aria-selected="false"
+              >HC</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              id="cc3-tab-just"
+              data-toggle="tab"
+              href="#cc3-just"
+              role="tab"
+              aria-controls="cc3-just"
+              aria-selected="false"
+              >CC3</a
+            >
+          </li>
+        </ul>
+        <div class="tab-content card pt-5" id="myTabContentJust">
+          <div
+            class="tab-pane fade show active"
+            id="patiometalico-just"
+            role="tabpanel"
+            aria-labelledby="patiometalico-tab-just"
+          >
+            <div class="table-responsive-sm">
+              <table class="table-sm">
+                <table class="table table-sm">
+                  <thead>
+                    <tr>
+                      <th colspan="2">Sistema</th>
+
+                      <th>Lectura</th>
+                      <th>Alarmas</th>
+                      <th>Tiempo Activadas</th>
+                      <th>Histórico</th>
+                      <th>Alarmas Ocultas</th>
+                      <th>OM Pendientes</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td colspan="2">
+                        <img
+                          src="https://img.icons8.com/metro/2x/factory.png"
+                          style="width: 20px; height: 20px;"
+                        />
+                      </td>
+                      <td>
+                        <img
+                          src="https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/DoubleArrowLeftRight-512.png"
+                          style="width: 20px; height: 20px;"
+                        />
+                      </td>
+                      <td colspan="2">
+                        <img
+                          src="https://cdn.pixabay.com/photo/2013/04/01/10/59/warning-98813_960_720.png"
+                          style="width: 20px; height: 20px;"
+                        />
+                      </td>
+                      <td>
+                        <img
+                          src="https://www.iconsdb.com/icons/preview/black/clock-3-xxl.png"
+                          style="width: 20px; height: 20px;"
+                        />
+                      </td>
+                      <td></td>
+                      <td>
+                        <img
+                          src="https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2009/4/29/1240996556472/exclamation-001.jpg?width=620&quality=85&auto=format&fit=max&s=1c6fbbdbc2878bbd9cbb8f4d9ea9ce67"
+                          style="width: 20px; height: 20px;"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Cizalla</td>
+                      <td>
+                        <img
+                          src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Ski_trail_rating_symbol-green_circle.svg/600px-Ski_trail_rating_symbol-green_circle.svg.png"
+                          style="width: 10px; height: 10px;"
+                        />
+                      </td>
+                      <td>15/15</td>
+                      <td>2</td>
+                      <td>90 min</td>
+                      <td>1</td>
+                      <td>3</td>
+                      <td>1</td>
+                    </tr>
+
+                    <tr>
+                      <td>Grua EUROMEC</td>
+                      <td>
+                        <img
+                          src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Ski_trail_rating_symbol-green_circle.svg/600px-Ski_trail_rating_symbol-green_circle.svg.png"
+                          style="width: 10px; height: 10px;"
+                        />
+                      </td>
+                      <td>8/8</td>
+                      <td>2</td>
+                      <td>45 min</td>
+                      <td>1</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>Balanza</td>
+                      <td>
+                        <img
+                          src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Ski_trail_rating_symbol-green_circle.svg/600px-Ski_trail_rating_symbol-green_circle.svg.png"
+                          style="width: 10px; height: 10px;"
+                        />
+                      </td>
+                      <td>4/5</td>
+                      <td>0</td>
+                      <td>23 min</td>
+                      <td>0</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>Sistema de Limpieza</td>
+                      <td>
+                        <img
+                          src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Ski_trail_rating_symbol-green_circle.svg/600px-Ski_trail_rating_symbol-green_circle.svg.png"
+                          style="width: 10px; height: 10px;"
+                        />
+                      </td>
+                      <td>2/3</td>
+                      <td>0</td>
+                      <td>-</td>
+                      <td>1</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </table>
+            </div>
+          </div>
+
+          <div
+            class="tab-pane fade"
+            id="he-just"
+            role="tabpanel"
+            aria-labelledby="profheile-tab-just"
+          >
+            <div class="table-responsive-sm">
+              <table class="table-sm">
+                <table class="table table-sm">
+                  <thead>
+                    <tr>
+                      <th colspan="2">Sistema</th>
+
+                      <th>Lectura</th>
+                      <th>Alarmas</th>
+                      <th>Tiempo Activadas</th>
+                      <th>Histórico</th>
+                      <th>Alarmas Ocultas</th>
+                      <th>OM Pendientes</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td colspan="2">
+                        <img
+                          src="https://img.icons8.com/metro/2x/factory.png"
+                          style="width: 20px; height: 20px;"
+                        />
+                      </td>
+                      <td>
+                        <img
+                          src="https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/DoubleArrowLeftRight-512.png"
+                          style="width: 20px; height: 20px;"
+                        />
+                      </td>
+                      <td colspan="2">
+                        <img
+                          src="https://cdn.pixabay.com/photo/2013/04/01/10/59/warning-98813_960_720.png"
+                          style="width: 20px; height: 20px;"
+                        />
+                      </td>
+                      <td>
+                        <img
+                          src="https://www.iconsdb.com/icons/preview/black/clock-3-xxl.png"
+                          style="width: 20px; height: 20px;"
+                        />
+                      </td>
+                      <td></td>
+                      <td>
+                        <img
+                          src="https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2009/4/29/1240996556472/exclamation-001.jpg?width=620&quality=85&auto=format&fit=max&s=1c6fbbdbc2878bbd9cbb8f4d9ea9ce67"
+                          style="width: 20px; height: 20px;"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Cizalla</td>
+                      <td>
+                        <img
+                          src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Ski_trail_rating_symbol-green_circle.svg/600px-Ski_trail_rating_symbol-green_circle.svg.png"
+                          style="width: 10px; height: 10px;"
+                        />
+                      </td>
+                      <td>15/15</td>
+                      <td>2</td>
+                      <td>90 min</td>
+                      <td>1</td>
+                      <td>3</td>
+                      <td>1</td>
+                    </tr>
+
+                    <tr>
+                      <td>Grua EUROMEC</td>
+                      <td>
+                        <img
+                          src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Ski_trail_rating_symbol-green_circle.svg/600px-Ski_trail_rating_symbol-green_circle.svg.png"
+                          style="width: 10px; height: 10px;"
+                        />
+                      </td>
+                      <td>8/8</td>
+                      <td>2</td>
+                      <td>45 min</td>
+                      <td>1</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>Balanza</td>
+                      <td>
+                        <img
+                          src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Ski_trail_rating_symbol-green_circle.svg/600px-Ski_trail_rating_symbol-green_circle.svg.png"
+                          style="width: 10px; height: 10px;"
+                        />
+                      </td>
+                      <td>4/5</td>
+                      <td>0</td>
+                      <td>23 min</td>
+                      <td>0</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>Sistema de Limpieza</td>
+                      <td>
+                        <img
+                          src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Ski_trail_rating_symbol-green_circle.svg/600px-Ski_trail_rating_symbol-green_circle.svg.png"
+                          style="width: 10px; height: 10px;"
+                        />
+                      </td>
+                      <td>2/3</td>
+                      <td>0</td>
+                      <td>-</td>
+                      <td>1</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </table>
+            </div>
+          </div>
+
+          <div
+            class="tab-pane fade"
+            id="hc-just"
+            role="tabpanel"
+            aria-labelledby="hc-tab-just"
+          >
+            <div class="table-responsive-sm">
+              <table class="table-sm">
+                <table class="table table-sm">
+                  <thead>
+                    <tr>
+                      <th colspan="2">Sistema</th>
+
+                      <th>Lectura</th>
+                      <th>Alarmas</th>
+                      <th>Tiempo Activadas</th>
+                      <th>Histórico</th>
+                      <th>Alarmas Ocultas</th>
+                      <th>OM Pendientes</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td colspan="2">
+                        <img
+                          src="https://img.icons8.com/metro/2x/factory.png"
+                          style="width: 20px; height: 20px;"
+                        />
+                      </td>
+                      <td>
+                        <img
+                          src="https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/DoubleArrowLeftRight-512.png"
+                          style="width: 20px; height: 20px;"
+                        />
+                      </td>
+                      <td colspan="2">
+                        <img
+                          src="https://cdn.pixabay.com/photo/2013/04/01/10/59/warning-98813_960_720.png"
+                          style="width: 20px; height: 20px;"
+                        />
+                      </td>
+                      <td>
+                        <img
+                          src="https://www.iconsdb.com/icons/preview/black/clock-3-xxl.png"
+                          style="width: 20px; height: 20px;"
+                        />
+                      </td>
+                      <td></td>
+                      <td>
+                        <img
+                          src="https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2009/4/29/1240996556472/exclamation-001.jpg?width=620&quality=85&auto=format&fit=max&s=1c6fbbdbc2878bbd9cbb8f4d9ea9ce67"
+                          style="width: 20px; height: 20px;"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Cizalla</td>
+                      <td>
+                        <img
+                          src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Ski_trail_rating_symbol-green_circle.svg/600px-Ski_trail_rating_symbol-green_circle.svg.png"
+                          style="width: 10px; height: 10px;"
+                        />
+                      </td>
+                      <td>15/15</td>
+                      <td>2</td>
+                      <td>90 min</td>
+                      <td>1</td>
+                      <td>3</td>
+                      <td>1</td>
+                    </tr>
+
+                    <tr>
+                      <td>Grua EUROMEC</td>
+                      <td>
+                        <img
+                          src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Ski_trail_rating_symbol-green_circle.svg/600px-Ski_trail_rating_symbol-green_circle.svg.png"
+                          style="width: 10px; height: 10px;"
+                        />
+                      </td>
+                      <td>8/8</td>
+                      <td>2</td>
+                      <td>45 min</td>
+                      <td>1</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>Balanza</td>
+                      <td>
+                        <img
+                          src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Ski_trail_rating_symbol-green_circle.svg/600px-Ski_trail_rating_symbol-green_circle.svg.png"
+                          style="width: 10px; height: 10px;"
+                        />
+                      </td>
+                      <td>4/5</td>
+                      <td>0</td>
+                      <td>23 min</td>
+                      <td>0</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>Sistema de Limpieza</td>
+                      <td>
+                        <img
+                          src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Ski_trail_rating_symbol-green_circle.svg/600px-Ski_trail_rating_symbol-green_circle.svg.png"
+                          style="width: 10px; height: 10px;"
+                        />
+                      </td>
+                      <td>2/3</td>
+                      <td>0</td>
+                      <td>-</td>
+                      <td>1</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </table>
+            </div>
+          </div>
+
+          <div
+            class="tab-pane fade"
+            id="cc3-just"
+            role="tabpanel"
+            aria-labelledby="cc3-tab-just"
+          >
+            <div class="table-responsive-sm">
+              <table class="table-sm">
+                <table class="table table-sm">
+                  <thead>
+                    <tr>
+                      <th colspan="2">Sistema</th>
+
+                      <th>Lectura</th>
+                      <th>Alarmas</th>
+                      <th>Tiempo Activadas</th>
+                      <th>Histórico</th>
+                      <th>Alarmas Ocultas</th>
+                      <th>OM Pendientes</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td colspan="2">
+                        <img
+                          src="https://img.icons8.com/metro/2x/factory.png"
+                          style="width: 20px; height: 20px;"
+                        />
+                      </td>
+                      <td>
+                        <img
+                          src="https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/DoubleArrowLeftRight-512.png"
+                          style="width: 20px; height: 20px;"
+                        />
+                      </td>
+                      <td colspan="2">
+                        <img
+                          src="https://cdn.pixabay.com/photo/2013/04/01/10/59/warning-98813_960_720.png"
+                          style="width: 20px; height: 20px;"
+                        />
+                      </td>
+                      <td>
+                        <img
+                          src="https://www.iconsdb.com/icons/preview/black/clock-3-xxl.png"
+                          style="width: 20px; height: 20px;"
+                        />
+                      </td>
+                      <td></td>
+                      <td>
+                        <img
+                          src="https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2009/4/29/1240996556472/exclamation-001.jpg?width=620&quality=85&auto=format&fit=max&s=1c6fbbdbc2878bbd9cbb8f4d9ea9ce67"
+                          style="width: 20px; height: 20px;"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Cizalla</td>
+                      <td>
+                        <img
+                          src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Ski_trail_rating_symbol-green_circle.svg/600px-Ski_trail_rating_symbol-green_circle.svg.png"
+                          style="width: 10px; height: 10px;"
+                        />
+                      </td>
+                      <td>15/15</td>
+                      <td>2</td>
+                      <td>90 min</td>
+                      <td>1</td>
+                      <td>3</td>
+                      <td>1</td>
+                    </tr>
+
+                    <tr>
+                      <td>Grua EUROMEC</td>
+                      <td>
+                        <img
+                          src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Ski_trail_rating_symbol-green_circle.svg/600px-Ski_trail_rating_symbol-green_circle.svg.png"
+                          style="width: 10px; height: 10px;"
+                        />
+                      </td>
+                      <td>8/8</td>
+                      <td>2</td>
+                      <td>45 min</td>
+                      <td>1</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>Balanza</td>
+                      <td>
+                        <img
+                          src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Ski_trail_rating_symbol-green_circle.svg/600px-Ski_trail_rating_symbol-green_circle.svg.png"
+                          style="width: 10px; height: 10px;"
+                        />
+                      </td>
+                      <td>4/5</td>
+                      <td>0</td>
+                      <td>23 min</td>
+                      <td>0</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>Sistema de Limpieza</td>
+                      <td>
+                        <img
+                          src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Ski_trail_rating_symbol-green_circle.svg/600px-Ski_trail_rating_symbol-green_circle.svg.png"
+                          style="width: 10px; height: 10px;"
+                        />
+                      </td>
+                      <td>2/3</td>
+                      <td>0</td>
+                      <td>-</td>
+                      <td>1</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="table-responsive-sm">
+          <table class="table">
+            <div>
+              <table class="table table-sm">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th class="th-sm">Área</th>
+                    <th class="th-sm">Sistema</th>
+                    <th class="th-sm">Subsistema</th>
+                    <th class="th-sm">Variable Observada</th>
+                    <th class="th-sm">Detalle</th>
+                    <th class="th-sm"></th>
+                    <th class="th-sm">Hora Inicio</th>
+                    <th class="th-sm">Generar OM</th>
+                    <th class="th-sm">Reincidencias</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <th scope="row">x</th>
+                    <td>P. Metálico</td>
+                    <td>Grúa</td>
+                    <td>S. Hidráulico</td>
+                    <td>Nivel Tanque Aceite</td>
+                    <td>Valor Fuera de Rango Inferior</td>
+                    <td>
+                      <!-- Button trigger modal -->
+                      <button
+                        type="button"
+                        class="btn btn-primary"
+                        data-toggle="modal"
+                        data-target="#exampleModalCenter"
+                      >
+                        ?
+                      </button>
+
+                      <!-- Modal -->
+                      <div
+                        class="modal fade"
+                        id="exampleModalCenter"
+                        tabindex="-1"
+                        role="dialog"
+                        aria-labelledby="exampleModalCenterTitle"
+                        aria-hidden="true"
+                      >
+                        <div
+                          class="modal-dialog modal-dialog-centered"
+                          role="document"
+                        >
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5
+                                class="modal-title"
+                                id="exampleModalLongTitle"
+                              >
+                                Sugerencia
+                              </h5>
+                              <button
+                                type="button"
+                                class="close"
+                                data-dismiss="modal"
+                                aria-label="Close"
+                              >
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <h6>HE > Horno > Bóveda > Flujo oxígeno T3</h6>
+                              <h6>Valor fuera de rango inferior</h6>
+                            </div>
+                            <div class="modal-body">
+                              <p>
+                                Revisar qué tan inestable se encuentra en las
+                                últimas 24 horas.
+                              </p>
+                            </div>
+                            <div class="modal-footer">
+                              <button
+                                type="button"
+                                class="btn btn-secondary"
+                                data-dismiss="modal"
+                              >
+                                Close
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>17/03/20 11:40:15</td>
+                    <td>
+                      <img
+                        src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-squares-01/3/16-512.png"
+                        style="width: 15px; height: 15px;"
+                      />
+                    </td>
+                    <td>-</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">x</th>
+                    <td>HE</td>
+                    <td>Horno</td>
+                    <td>Bóveda</td>
+                    <td>Temperatura T105</td>
+                    <td>Pérdida de Conexión</td>
+                    <td>
+                      <img
+                        src="https://image.flaticon.com/icons/svg/189/189665.svg"
+                        style="width: 15px; height: 15px;"
+                      />
+                    </td>
+                    <td>17/03/20 11:32:27</td>
+                    <td>
+                      <img
+                        src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-squares-01/3/16-512.png"
+                        style="width: 15px; height: 15px;"
+                      />
+                    </td>
+                    <td>-</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">x</th>
+                    <td>HE</td>
+                    <td>Horno</td>
+                    <td>Bóveda</td>
+                    <td>Temperatura T106</td>
+                    <td>Valor Fuera de Rango Superior</td>
+                    <td>
+                      <img
+                        src="https://image.flaticon.com/icons/svg/189/189665.svg"
+                        style="width: 15px; height: 15px;"
+                      />
+                    </td>
+                    <td>17/03/20 10:03:27</td>
+                    <td>
+                      <img
+                        src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-squares-01/3/16-512.png"
+                        style="width: 15px; height: 15px;"
+                      />
+                    </td>
+                    <td>-</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">x</th>
+                    <td>HE</td>
+                    <td>Horno</td>
+                    <td>Bóveda</td>
+                    <td>Flujo oxígeno T3</td>
+                    <td>Valor fuera de rango inferior</td>
+                    <td>
+                      <img
+                        src="https://image.flaticon.com/icons/svg/189/189665.svg"
+                        style="width: 15px; height: 15px;"
+                      />
+                    </td>
+                    <td>17/03/20 10:02:15</td>
+                    <td>
+                      <img
+                        src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-squares-01/3/16-512.png"
+                        style="width: 15px; height: 15px;"
+                      />
+                    </td>
+                    <td>-</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">x</th>
+                    <td>CC3</td>
+                    <td>Lingoteras</td>
+                    <td>Lingotera L1</td>
+                    <td>L1 Presión salida agua molde</td>
+                    <td>Conexión inestable</td>
+                    <td>
+                      <img
+                        src="https://image.flaticon.com/icons/svg/189/189665.svg"
+                        style="width: 15px; height: 15px;"
+                      />
+                    </td>
+                    <td>17/03/20 10:32:27</td>
+                    <td>
+                      <img
+                        src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-squares-01/3/16-512.png"
+                        style="width: 15px; height: 15px;"
+                      />
+                    </td>
+                    <td>4</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">x</th>
+                    <td>P. Metálico</td>
+                    <td>S. de Limpieza</td>
+                    <td>Tambor rotativo</td>
+                    <td>Corriente</td>
+                    <td>Valor fuera de rango inferior</td>
+                    <td>
+                      <img
+                        src="https://image.flaticon.com/icons/svg/189/189665.svg"
+                        style="width: 15px; height: 15px;"
+                      />
+                    </td>
+                    <td>17/03/20 09:03:36</td>
+                    <td>
+                      <img
+                        src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-squares-01/3/16-512.png"
+                        style="width: 15px; height: 15px;"
+                      />
+                    </td>
+                    <td>-</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </table>
+        </div>
+      </section>
+      
+    </main>
+
+    <footer></footer>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
